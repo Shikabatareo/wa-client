@@ -1,0 +1,17 @@
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100px;
+}
+
+.before_after {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	max-width: 560px;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 20px;
+}

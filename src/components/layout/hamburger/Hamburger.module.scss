@@ -1,0 +1,41 @@
+@import 'src/assets/styles/animations';
+@import 'src/assets/styles/variables';
+.wrapper {
+	position: relative;
+	> button {
+		all: unset;
+	}
+	.menu {
+		position: absolute;
+
+		min-width: 116px;
+		display: none;
+		animation: opacity 0.4s;
+		right: 0;
+		font-size: 13px;
+		background-color: #fff;
+		color: #202020;
+		font-family: $default-font;
+		font-weight: 200;
+		border-radius: 10px 0 10px 10px;
+		height: 100px;
+		padding: 10px;
+		&.show {
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+		}
+		> ul {
+			list-style: none;
+			li {
+				cursor: pointer;
+				&:hover {
+					color: $accent;
+				}
+				> button {
+					all: unset;
+				}
+			}
+		}
+	}
+}

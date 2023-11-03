@@ -1,0 +1,35 @@
+@import 'src/assets/styles/variables';
+
+.button {
+	font-size: 20px;
+	text-align: center;
+
+	color: $white;
+	border: none;
+	border-radius: 10px 10px 10px 10px;
+	cursor: pointer;
+	padding: 15px 35px;
+}
+
+.button1 {
+	background-color: $accent;
+
+	&:hover {
+		background-color: darken($accent, 5%);
+	}
+}
+
+.button2 {
+	background-color: #222b59;
+
+	&:hover {
+		background-color: darken(#222b59, 5%);
+	}
+}
+h1 {
+	width: 225px;
+	margin: 0 auto;
+	margin-bottom: 52px;
+	text-align: center;
+	color: black;
+}
